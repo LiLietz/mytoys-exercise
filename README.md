@@ -1,4 +1,4 @@
-A small try of reproducing the MyToys iOS App
+A small try to reproduce the MyToys iOS App
 
 # My Approach:
 
