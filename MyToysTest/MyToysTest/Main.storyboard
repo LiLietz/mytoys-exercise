@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Home PageVC-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="HomePageVC" customModule="MyToysTest" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="I4z-Zi-lzQ">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <color key="backgroundColor" red="0.36078431372549019" green="0.38823529411764707" blue="0.40392156862745099" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </webView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NtR-lL-2pm">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="60"/>
+                                <subviews>
+                                    <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="U1e-82-mNb">
+                                        <rect key="frame" x="0.0" y="16" width="375" height="44"/>
+                                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                        <color key="barTintColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                        <items>
+                                            <navigationItem title="MyToys" id="UjH-XF-0wa">
+                                                <barButtonItem key="leftBarButtonItem" title="Menu" id="CEc-MQ-p6y">
+                                                    <connections>
+                                                        <action selector="tappedMenuButton:" destination="BYZ-38-t0r" id="g2N-d3-N0B"/>
+                                                    </connections>
+                                                </barButtonItem>
+                                            </navigationItem>
+                                        </items>
+                                    </navigationBar>
+                                </subviews>
+                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="U1e-82-mNb" secondAttribute="bottom" id="Nql-H0-mOD"/>
+                                    <constraint firstAttribute="trailing" secondItem="U1e-82-mNb" secondAttribute="trailing" id="OjI-3D-RzW"/>
+                                    <constraint firstItem="U1e-82-mNb" firstAttribute="leading" secondItem="NtR-lL-2pm" secondAttribute="leading" id="UI6-FV-ScT"/>
+                                    <constraint firstAttribute="height" constant="60" id="tFd-kB-OXe"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="0.85337942840000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="NtR-lL-2pm" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="0Rr-Yw-QOv"/>
+                            <constraint firstItem="I4z-Zi-lzQ" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="EYo-eU-sa0"/>
+                            <constraint firstItem="I4z-Zi-lzQ" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="Qus-ls-cGD"/>
+                            <constraint firstAttribute="trailing" secondItem="NtR-lL-2pm" secondAttribute="trailing" id="Ztd-2z-XoK"/>
+                            <constraint firstAttribute="trailing" secondItem="I4z-Zi-lzQ" secondAttribute="trailing" id="m6Z-Nr-yCq"/>
+                            <constraint firstItem="NtR-lL-2pm" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="uKo-BW-ndC"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="I4z-Zi-lzQ" secondAttribute="bottom" id="vdP-AW-KoJ"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="navigationBar" destination="U1e-82-mNb" id="Zen-fL-GqZ"/>
+                        <outlet property="webView" destination="I4z-Zi-lzQ" id="6es-E9-ayS"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="112.8" y="108.39580209895054"/>
+        </scene>
+    </scenes>
+</document>
