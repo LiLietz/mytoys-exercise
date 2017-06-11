@@ -1,4 +1,4 @@
-# mytoys-exercise
+A small try of reproducing the MyToys iOS App
 
 # My Approach:
 
